@@ -1,6 +1,6 @@
 <div id='introducao'>
 
-O **upload-ai** é uma aplicação que possibilita realizar upload de vídeos e por meio de IA, criar automaticamente títulos chamativos e descrições com um boa indexação.
+A **AI-Transcript** é uma aplicação que possibilita realizar upload de vídeos e por meio de IA, criar automaticamente títulos chamativos e descrições com um boa indexação.
 
 </div>
 
@@ -32,6 +32,10 @@ pnpm i
 ```
 
 Repita esse passo para `../web`.
+
+Após isso, coloque uma Key gerada na OpenAi no espaço indicado no .env (recomenda-se contas 100% novas para obter $5 grátis)
+
+Link de um vídeo ensinando a obter a key caso não saiba: https://www.youtube.com/watch?v=Kfuh4v_hqnw&ab_channel=GianCampos
 
 <div id='stack_utilizada'>
 <h2>Stack utilizada</h2>

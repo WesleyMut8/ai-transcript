@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Cada model é uma tabela de banco de dados dentro do prisma
+model Video {
+  id String @id @default(uuid()) //@id mostra que o campo é uma primarykey, o uuid() faz com que um id seja gerado para cada Video
+  name String //provavelmente o nome do arquivo
+  path String //caminho onde o vídeo vai ser salvo
+  transcription String? //o ? torna a transcription opcional
+  createdAt DateTime @default(now())  //quando o vídeo foi criado, o default now torna o dado padrão a data atual
+}
+
+model Prompt {
+  id String @id @default(uuid()) 
+  title String //título do prompt
+  template String //lógica do prompt
+}
